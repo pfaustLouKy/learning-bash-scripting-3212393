@@ -1,0 +1,11 @@
+CONTRIBUTING.md
+LICENSE
+NOTICE
+README.md
+Snippets.md
+Solutions
+dir1
+dir2
+dir3
+list.txt
+lorem.txt
