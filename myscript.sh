@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
-echo "The results are:$(( 2 + 2 )) and $(( 3 / 1 ))"
-printf "The results are: %d and %d\n" $(( 2 + 2 )) $(( 3 / 1 ))
+declare -a snacks=("apple" "banana" "orange")
+echo ${snacks[2]}
+snacks[5]="grape"
+snacks+=("mango")
+echo ${snacks[@]}
+for i in {0..6}; do echo "$i: ${snacks[i]}"; done
