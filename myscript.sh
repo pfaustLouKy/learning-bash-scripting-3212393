@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-declare -a office
-office[city]="San Francisco"
-office["building_name"]="HQ West"
-echo ${office["building_name"]} is in ${office[city]}
+freespace=$(df -h / | awk 'NR==2 {print $4}')
+echo "Free space: $freespace"
+
+freemem=$(free -h | awk 'NR==2 {print $4}')
+echo "Free memory: $freemem"
