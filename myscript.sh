@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 
-declare -i a=5
+echo "While Loop"
 
-if [[ $a -gt 4 ]]
-then
-    echo "$a is greater than 4"
-else
-    echo "$a is less than 4"
-fi
+declare -i n=0
+while ((n<10))
+do
+  echo  "n:$n"
+  ((n++))
+done
+
+echo -e "\n Until Loop"
+
+declare -i m=0
+until ((m==10)); do
+  echo "m:$m"
+  ((m++))
+done
