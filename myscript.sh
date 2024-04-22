@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-declare -a fruits=("apple" "banana" "cherry")
-for i in ${fruits[@]}
+for i in $(ls)
 do
-  echo $i
+    echo Found a file: $i
 done
